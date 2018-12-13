@@ -367,8 +367,8 @@ function plotData(layers, mymap) {
 	addCrimeListener("felonies", 0, layers, mymap);
 	addCrimeListener("misdemeanors", 24, layers, mymap);
 	addCrimeListener("violations", 48, layers, mymap);
-	addStartListener("start", "end", layers, mymap);
-	addEndListener("start", "end", layers, mymap);	
+	//addStartListener("start", "end", layers, mymap);
+	//addEndListener("start", "end", layers, mymap);	
 }
 
 whenDocumentLoaded(() => {
@@ -381,10 +381,10 @@ whenDocumentLoaded(() => {
 		accessToken: 'pk.eyJ1IjoiYmdyYXNzeSIsImEiOiJjam90M283enMwM2d1M3ZvZGRweXhuZXdwIn0.OOZ5ruMJLs3hrovEkbYcjg'
 	}).addTo(mymap);
 
-	const date = document.getElementById("date");
+	//const date = document.getElementById("date");
 
 
-	date.addEventListener('change', (event) => {
+	/*date.addEventListener('change', (event) => {
 	    let inputDate = new Date(event.target.value);
 	    let year = inputDate.getFullYear();
 	    if (year >= 2006 && year <= 2017) {
@@ -401,7 +401,7 @@ whenDocumentLoaded(() => {
 	    	plotData(data, mymap);
 	    }
 	    //plotData(data, mymap);
-	});
+	});*/
 
 	let data = getCSVData(5, 12, 2013);
 	plotData(data, mymap);

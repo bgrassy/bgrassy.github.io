@@ -21,6 +21,7 @@ Make the document fill the whole viewport, this overrides any weird defaults tha
 
 .container {
 	align-content: center;
+	width: 100%;
 }
 
 .dropbutton {
@@ -43,7 +44,6 @@ Make the document fill the whole viewport, this overrides any weird defaults tha
 
 #mapid {
 	height: 600px;
-	z-index: -1;
 }
 
 .show {display: none;}
